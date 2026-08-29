@@ -1,0 +1,44 @@
+# ---------------------------------------------------------------
+# 응용동역학 2026-2 — 저장소 제외 규칙
+# 여기 적힌 것은 GitHub에 올라가지 않습니다.
+# ---------------------------------------------------------------
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# 가상환경
+.venv/
+venv/
+env/
+.conda/
+
+# 편집기 / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 대용량 해석 결과 (GitHub은 100MB 초과 파일을 거부합니다)
+*.zip
+*.7z
+*.mgb
+*.mgbx
+*.out
+*.h5
+*.hdf5
+*.npz
+
+# 임시 파일
+*.tmp
+*.bak
+~$*
+
+# 개인정보 / 비밀키 — 절대 올리지 말 것
+.env
+*.key
+*.pem
+secrets.*
