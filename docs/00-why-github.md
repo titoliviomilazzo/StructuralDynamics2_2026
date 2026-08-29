@@ -1,3 +1,9 @@
+---
+layout: default
+title: "왜 GitHub인가"
+subtitle: "개념만, 설치 없음"
+---
+
 # 00 — 왜 GitHub을 쓰는가
 
 설치할 것 없습니다. 5분만 읽으세요. 용어가 잡히면 나머지는 클릭 몇 번입니다.

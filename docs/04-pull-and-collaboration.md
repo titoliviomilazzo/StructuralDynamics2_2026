@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Pull과 협업"
+subtitle: "브랜치 · Pull Request"
+---
+
 # 04 — Pull과 협업 (수업 저장소 사용법)
 
 **목표:** 수업 저장소에서 자료를 받고, 브랜치를 만들어 작업하고, Pull Request로 제출한다.
@@ -15,7 +21,7 @@
 2. VS Code에서 `Ctrl + Shift + P` → **Git: Clone**
 3. 주소 입력
    ```
-   https://github.com/titoliviomilazzo/StrucuturalDynamics2_2026
+   https://github.com/titoliviomilazzo/StructuralDynamics2_2026
    ```
 4. 저장 위치 지정 → **Open**
 

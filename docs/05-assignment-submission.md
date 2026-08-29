@@ -1,3 +1,9 @@
+---
+layout: default
+title: "과제 제출 규칙"
+subtitle: "채점 기준 · AI 사용 정책"
+---
+
 # 05 — 과제 제출 규칙
 
 **제출 = Pull Request.** 메일·카톡·USB 제출은 받지 않습니다.

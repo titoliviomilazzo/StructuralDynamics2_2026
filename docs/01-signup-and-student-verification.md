@@ -1,3 +1,9 @@
+---
+layout: default
+title: "가입 + 학생 인증"
+subtitle: "Copilot 무료화까지"
+---
+
 # 01 — GitHub 계정 생성과 학생 인증
 
 **목표:** GitHub 계정을 만들고, 학생 인증을 신청해서 **Copilot을 무료로** 쓸 자격을 확보한다.

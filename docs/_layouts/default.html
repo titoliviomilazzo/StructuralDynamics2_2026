@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ page.title }} · 응용동역학 2026</title>
+<meta name="description" content="{{ page.subtitle }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap">
+<style>
+:root{
+  --paper:#eceeea; --surface:#f7f8f5; --surface-2:#e3e7e1;
+  --ink:#14191a; --ink-soft:#525c5b; --ink-faint:#7d8785;
+  --rule:#ccd3cd; --rule-soft:#dbe0da;
+  --trace:#14666c; --trace-soft:#d7e6e6;
+  --stamp:#9d3626; --stamp-soft:#f0dcd6;
+  --f-disp:"IBM Plex Sans Condensed","IBM Plex Sans KR","Malgun Gothic",sans-serif;
+  --f-body:"IBM Plex Sans KR","IBM Plex Sans Condensed","Malgun Gothic",sans-serif;
+  --f-mono:"IBM Plex Mono","IBM Plex Sans KR",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0e1213; --surface:#151a1b; --surface-2:#1d2425;
+    --ink:#e4e9e5; --ink-soft:#9aa5a3; --ink-faint:#727d7b;
+    --rule:#2a3334; --rule-soft:#212a2b;
+    --trace:#54b9be; --trace-soft:#1c3c3e;
+    --stamp:#e08a76; --stamp-soft:#3a2320;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0e1213; --surface:#151a1b; --surface-2:#1d2425;
+  --ink:#e4e9e5; --ink-soft:#9aa5a3; --ink-faint:#727d7b;
+  --rule:#2a3334; --rule-soft:#212a2b;
+  --trace:#54b9be; --trace-soft:#1c3c3e;
+  --stamp:#e08a76; --stamp-soft:#3a2320;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--f-body);font-size:16px;line-height:1.78;font-weight:400;
+  -webkit-font-smoothing:antialiased;word-break:keep-all;
+}
+.shell{max-width:46rem;margin:0 auto;padding:0 clamp(1.15rem,4vw,2rem)}
+a{color:var(--trace)}
+:focus-visible{outline:2px solid var(--trace);outline-offset:3px;border-radius:2px}
+
+/* topbar */
+.top{border-bottom:1px solid var(--rule);background:var(--surface);position:sticky;top:0;z-index:5}
+.top .shell{display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding-top:.7rem;padding-bottom:.7rem}
+.top a.home{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.13em;
+  text-transform:uppercase;text-decoration:none;color:var(--ink-faint)}
+.top a.home:hover{color:var(--trace)}
+.top .sub{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.08em;color:var(--ink-faint)}
+
+/* content */
+main{padding:clamp(2.2rem,6vw,3.6rem) 0 1rem}
+main :first-child{margin-top:0}
+h1,h2,h3,h4{font-family:var(--f-disp);font-weight:700;line-height:1.2;text-wrap:balance;margin:0}
+h1{font-size:clamp(1.85rem,5vw,2.6rem);letter-spacing:-.022em}
+h2{font-size:clamp(1.25rem,3.4vw,1.6rem);letter-spacing:-.008em;
+  margin:3rem 0 .9rem;padding-top:1.4rem;border-top:1px solid var(--rule-soft)}
+h3{font-size:1.08rem;font-weight:600;margin:2rem 0 .6rem}
+h4{font-size:.97rem;font-weight:600;margin:1.5rem 0 .4rem;color:var(--ink-soft)}
+p{margin:1.05rem 0}
+strong{font-weight:600}
+hr{border:0;border-top:1px solid var(--rule);margin:2.6rem 0}
+ul,ol{padding-left:1.35rem;margin:1.05rem 0}
+li{margin:.4rem 0}
+li::marker{color:var(--ink-faint)}
+img{max-width:100%;height:auto;border:1px solid var(--rule-soft);border-radius:2px}
+
+code{font-family:var(--f-mono);font-size:.86em;background:var(--surface-2);
+  padding:.12em .38em;border-radius:2px}
+pre{background:var(--surface);border:1px solid var(--rule-soft);border-radius:2px;
+  padding:.95rem 1.05rem;overflow-x:auto;margin:1.2rem 0;line-height:1.62}
+pre code{background:none;padding:0;font-size:.83rem}
+
+blockquote{margin:1.4rem 0;padding:.9rem 1.1rem;background:var(--surface);
+  border-left:2px solid var(--trace);border-radius:0 2px 2px 0;color:var(--ink-soft)}
+blockquote p{margin:.4rem 0}
+blockquote strong{color:var(--ink)}
+
+.tablewrap,table{margin:1.4rem 0}
+table{border-collapse:collapse;width:100%;font-size:.92rem;display:block;overflow-x:auto}
+th,td{text-align:left;padding:.6rem .85rem;border-bottom:1px solid var(--rule-soft);
+  vertical-align:top}
+thead th{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink-faint);font-weight:500;white-space:nowrap}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+
+/* task lists */
+input[type=checkbox]{accent-color:var(--trace);margin-right:.35rem}
+li:has(> input[type=checkbox]){list-style:none;margin-left:-1.2rem}
+
+/* footer nav */
+footer{border-top:1px solid var(--rule);margin-top:3.5rem}
+footer .shell{padding-top:1.6rem;padding-bottom:3.5rem;
+  display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;align-items:baseline;
+  font-family:var(--f-mono);font-size:.73rem;letter-spacing:.04em;color:var(--ink-faint)}
+footer a{text-decoration:none}
+footer a:hover{text-decoration:underline}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="shell">
+    <a class="home" href="{{ '/' | relative_url }}">← 응용동역학 0주차</a>
+    <span class="sub">{{ page.subtitle }}</span>
+  </div>
+</div>
+
+<main class="shell">
+  {{ content }}
+</main>
+
+<footer>
+  <div class="shell">
+    <span><a href="{{ '/' | relative_url }}">처음으로</a></span>
+    <span><a href="{{ '/99-cheatsheet.html' | relative_url }}">치트시트</a></span>
+    <span><a href="{{ '/06-error-handbook.html' | relative_url }}">오류 대응 사전</a></span>
+    <span>응용동역학 · 2026 가을</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -2,6 +2,9 @@
 
 초고층내진계약학과 · 수업 저장소
 
+**수강생 안내 페이지 → https://titoliviomilazzo.github.io/StructuralDynamics2_2026/**
+(로그인 없이 열립니다. 0주차 안내는 이 주소를 공유하세요.)
+
 이 저장소는 **강의자료 배포 + 과제 제출 + 코드 공유**를 한 곳에서 처리합니다.
 GitHub을 처음 써 보는 분을 기준으로 만들었습니다. 순서대로만 따라오면 됩니다.
 
@@ -46,7 +49,7 @@ GitHub을 처음 써 보는 분을 기준으로 만들었습니다. 순서대로
 ## 폴더 구조
 
 ```
-StrucuturalDynamics2_2026/
+StructuralDynamics2_2026/
 ├─ README.md              ← 지금 이 파일
 ├─ docs/                  ← 튜토리얼 (00~99)
 ├─ examples/              ← 강의용 예제 코드

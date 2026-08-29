@@ -1,3 +1,9 @@
+---
+layout: default
+title: "VS Code · Python · Copilot"
+subtitle: "환경 구축"
+---
+
 # 02 — VS Code 설치와 Copilot 사용법
 
 **목표:** 프로그램 하나(VS Code)만 깔고, 그 안에서 코드 작성·AI·GitHub을 전부 처리한다.
