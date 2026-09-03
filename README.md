@@ -42,8 +42,9 @@ GitHub을 처음 써 보는 분을 기준으로 만들었습니다. 순서대로
 | --- | --- | --- |
 | [examples/01_sdof_free_vibration](examples/01_sdof_free_vibration/) | SDOF 감쇠 자유진동 | 고유주기, 감쇠비, 대수감쇠율 |
 | [examples/02_harmonic_response](examples/02_harmonic_response/) | 조화하중 정상응답 | 동적증폭계수, 공진, 위상각 |
+| [examples/03_dinner_menu_app](examples/03_dinner_menu_app/) | 한국어 저녁 메뉴 추천 앱 | Streamlit UI, 메뉴 추천, 로컬 이미지 자산 |
 
-두 예제 모두 **이론해와 수치해를 나란히 계산해서 서로 검증**하도록 짜여 있습니다.
+앞의 두 구조동역학 예제는 **이론해와 수치해를 나란히 계산해서 서로 검증**하도록 짜여 있습니다.
 "돌아가니까 맞겠지"가 아니라 **틀렸으면 즉시 드러나게** 만드는 방식을 예제로 익히세요.
 
 ## 폴더 구조
