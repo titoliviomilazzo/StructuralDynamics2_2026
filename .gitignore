@@ -42,3 +42,6 @@ desktop.ini
 *.key
 *.pem
 secrets.*
+
+# 노트북 실행 중 생성되는 파일
+lectures/**/output.txt

@@ -47,6 +47,20 @@ GitHub을 처음 써 보는 분을 기준으로 만들었습니다. 순서대로
 모든 예제가 **이론해와 수치해를 나란히 계산해서 서로 검증**하도록 짜여 있습니다.
 "돌아가니까 맞겠지"가 아니라 **틀렸으면 즉시 드러나게** 만드는 방식을 예제로 익히세요.
 
+## 주제별 강의 노트북
+
+수업 시간에 띄우는 Jupyter 노트북입니다. 폴더 하나에 노트북과 필요한 데이터가 같이 있으니 폴더째 열고 실행하면 됩니다.
+강의 순서는 학기마다 달라서 주차 대신 주제로 나눴습니다. 자세한 안내는 [lectures/README.md](lectures/README.md).
+
+| 폴더 | 주제 | 노트북 |
+| --- | --- | --- |
+| [sdof_forced_vibration](lectures/sdof_forced_vibration/) | SDOF 자유·강제진동 | 동적증폭계수, 응답 애니메이션 |
+| [mdof_eigen](lectures/mdof_eigen/) | 2자유도 고유치 해석 | 고유주기, 모드형상, 자유진동 |
+| [response_spectrum](lectures/response_spectrum/) | 탄성응답스펙트럼 | 실습 노트북 + El Centro 스펙트럼 |
+| [rs_analysis](lectures/rs_analysis/) | 응답스펙트럼 해석 | 모드별 응답, SRSS 조합 |
+| [newmark_beta](lectures/newmark_beta/) | 수치적분 | 테일러급수 → Newmark-β |
+| [fourier_psd](lectures/fourier_psd/) | 주파수 영역 | FFT, 파워스펙트럼, Welch PSD |
+
 ## 폴더 구조
 
 ```
@@ -54,6 +68,7 @@ StructuralDynamics2_2026/
 ├─ README.md              ← 지금 이 파일
 ├─ docs/                  ← 튜토리얼 (00~99)
 ├─ examples/              ← 강의용 예제 코드
+├─ lectures/              ← 주제별 강의 노트북
 ├─ assignments/           ← 과제 제출 위치
 │   └─ <학번>_<이름>/      ← 본인 폴더에만 작업
 └─ .gitignore
