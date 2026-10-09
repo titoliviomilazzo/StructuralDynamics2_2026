@@ -42,8 +42,9 @@ GitHub을 처음 써 보는 분을 기준으로 만들었습니다. 순서대로
 | --- | --- | --- |
 | [examples/01_sdof_free_vibration](examples/01_sdof_free_vibration/) | SDOF 감쇠 자유진동 | 고유주기, 감쇠비, 대수감쇠율 |
 | [examples/02_harmonic_response](examples/02_harmonic_response/) | 조화하중 정상응답 | 동적증폭계수, 공진, 위상각 |
+| [examples/03_inclass_notebook](examples/03_inclass_notebook/) | 수업 실습 노트북 | 자유·강제진동, Newmark 안정성, 응답스펙트럼 |
 
-두 예제 모두 **이론해와 수치해를 나란히 계산해서 서로 검증**하도록 짜여 있습니다.
+모든 예제가 **이론해와 수치해를 나란히 계산해서 서로 검증**하도록 짜여 있습니다.
 "돌아가니까 맞겠지"가 아니라 **틀렸으면 즉시 드러나게** 만드는 방식을 예제로 익히세요.
 
 ## 폴더 구조
